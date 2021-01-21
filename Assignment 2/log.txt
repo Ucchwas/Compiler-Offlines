@@ -1,0 +1,41 @@
+Error at line no 1: Too many decimal point 1.2.345
+
+Error at line no 2: Ill formed number 1E10.7
+
+Error at line no 3: Invalid Suffix on numeric constant or invalid prefix on identifier 12abcd
+
+Error at line no 4: Multi character constant error 'ab'
+
+Error at line no 5: Unfinished character 'a
+
+Error at line no 6: Unterminated character '
+
+Error at line no 7: Multi character constant error 'ab cd'
+
+Error at line no 8: Unfinished character '\'
+
+Error at line no 9: Empty character constant error ''
+
+Error at line no 10: Unterminated String "abcd
+
+Error at line no 11: Unterminated String "abcd\
+efgh
+
+Line no 13: TOKEN <ID> Lexeme ijk found
+
+Scopetable--> 1 
+--> 0 <ijk:CONST_ID> 
+
+Error at line no 13: Unterminated String "
+
+Error at line no 14: Unterminated comment /**abc
+
+Line no 15: TOKEN <ID> Lexeme def found
+
+Scopetable--> 1 
+--> 0 <ijk:CONST_ID> 
+--> 3 <def:CONST_ID> 
+
+Total Lines: 15
+
+Total Errors: 13

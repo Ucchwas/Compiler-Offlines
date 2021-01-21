@@ -1,0 +1,312 @@
+Line no 1: type_specifier : INT
+
+int
+
+Line no 2: type_specifier : INT
+
+int
+
+Line no 2 : declaration_list : ID
+
+a 
+
+Line no 2 : declaration_list : declaration_list COMMA ID
+
+a,b
+
+Line no 2 : declaration_list : declaration_list COMMA ID
+
+a,b,i
+
+Line no : 2  var_declaration : type_specifier declaration_list SEMICOLON
+
+int a,b,i;
+
+Line no : 2 statement : var_declaration
+
+Line no : 2 statements : statement
+
+Line no : 3 variable: ID
+ b
+
+Line no :3 factor: CONST_INT
+ 0
+
+Line no : 3 unary_expression: factor
+
+0
+
+Line no : 3 term : unary_expression
+
+0
+
+Line no : 3 simple_expression : term
+
+0
+
+Line no :3 rel_expression	: simple_expression
+
+0
+
+Line no :3 logic_expression : rel_expression
+
+0
+
+Line no : 3 expression : variable ASSIGNOP logic_expression
+
+
+Line no : 3 expression_statement : expression SEMICOLON
+
+b=0;
+
+Line no : 3 statement : expression_statement
+
+Line no : 3 statements : statements statement
+
+Line no : 4 variable: ID
+ i
+
+Line no :4 factor: CONST_INT
+ 0
+
+Line no : 4 unary_expression: factor
+
+0
+
+Line no : 4 term : unary_expression
+
+0
+
+Line no : 4 simple_expression : term
+
+0
+
+Line no :4 rel_expression	: simple_expression
+
+0
+
+Line no :4 logic_expression : rel_expression
+
+0
+
+Line no : 4 expression : variable ASSIGNOP logic_expression
+
+
+Line no : 4 expression_statement : expression SEMICOLON
+
+i=0;
+
+Line no : 4 variable: ID
+ i
+
+Line no : 4 factor: variable
+
+i
+
+Line no : 4 unary_expression: factor
+
+i
+
+Line no : 4 term : unary_expression
+
+i
+
+Line no : 4 simple_expression : term
+
+i
+
+Line no :4 factor: CONST_INT
+ 4
+
+Line no : 4 unary_expression: factor
+
+4
+
+Line no : 4 term : unary_expression
+
+4
+
+Line no : 4 simple_expression : term
+
+4
+
+Line no :4 rel_expression: simple_expression RELOP simple_expression
+
+i<4
+
+Line no :4 logic_expression : rel_expression
+
+i<4
+
+Line no : 4 expression : logic_expression
+
+i<4
+
+Line no : 4 expression_statement : expression SEMICOLON
+
+i<4;
+
+Line no : 4 variable: ID
+ i
+
+Line no :4 factor: variable INCOP
+
+i++
+
+ScopeTable--> 1 
+<b,ID,0><i,ID,1>
+<a,ID,-1111>
+
+Line no : 4 unary_expression: factor
+
+i++
+
+Line no : 4 term : unary_expression
+
+i++
+
+Line no : 4 simple_expression : term
+
+i++
+
+Line no :4 rel_expression	: simple_expression
+
+i++
+
+Line no :4 logic_expression : rel_expression
+
+i++
+
+Line no : 4 expression : logic_expression
+
+i++
+
+Line no : 5 variable: ID
+ a
+
+Line no :5 factor: CONST_INT
+ 3
+
+Line no : 5 unary_expression: factor
+
+3
+
+Line no : 5 term : unary_expression
+
+3
+
+Line no : 5 simple_expression : term
+
+3
+
+Line no :5 rel_expression	: simple_expression
+
+3
+
+Line no :5 logic_expression : rel_expression
+
+3
+
+Line no : 5 expression : variable ASSIGNOP logic_expression
+
+
+Line no : 5 expression_statement : expression SEMICOLON
+
+a=3;
+
+Line no : 5 statement : expression_statement
+
+Line no : 5 statements : statement
+
+Line no : 6 variable: ID
+ a
+
+Line no :6 factor: variable DECOP
+
+a--
+
+ScopeTable--> 1 
+<b,ID,0><i,ID,1>
+<a,ID,2>
+
+
+Line no : 6 unary_expression: factor
+
+a--
+
+Line no : 6 term : unary_expression
+
+a--
+
+Line no : 6 simple_expression : term
+
+a--
+
+Line no :6 rel_expression	: simple_expression
+
+a--
+
+Line no :6 logic_expression : rel_expression
+
+a--
+
+Line no : 6 expression : logic_expression
+
+a--
+
+Line no : 7 variable: ID
+ b
+
+Line no :7 factor: variable INCOP
+
+b++
+
+ScopeTable--> 1 
+<b,ID,1><i,ID,1>
+<a,ID,2>
+
+Line no : 7 unary_expression: factor
+
+b++
+
+Line no : 7 term : unary_expression
+
+b++
+
+Line no : 7 simple_expression : term
+
+b++
+
+Line no :7 rel_expression	: simple_expression
+
+b++
+
+Line no :7 logic_expression : rel_expression
+
+b++
+
+Line no : 7 expression : logic_expression
+
+b++
+
+Line no : 7 expression_statement : expression SEMICOLON
+
+b++;
+
+Line no : 7 statement : expression_statement
+
+Line no : 7 statements : statement
+
+Line no : 8 compound_statement : LCURL statements RCURL
+
+Line no : 8 statement : compound_statement
+
+Line no : 8 statement: WHILE LPAREN expression RPAREN statement
+
+Line no : 8 statements : statements statement
+
+Line no : 9 compound_statement : LCURL statements RCURL
+
+Line no : 9 statement : compound_statement
+
+Line no : 9 statement: FOR LPAREN expression_statement expression_statement

@@ -1,0 +1,14 @@
+Error at Line : 6 Multiple declaration of c
+
+Error at Line 7: Non-integer Array Index
+
+Error at Line 8: Type Mismatch
+
+Line no 10: a is Array Type
+
+Line no 11: a is Array Type
+
+Error at Line 11: parameter numbers are not equal
+
+Error at Line 12: Undeclared Variable b 
+

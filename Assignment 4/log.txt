@@ -1,0 +1,241 @@
+Line no 1->type_specifier	: INT
+
+Line no 1->parameter_list2 : 
+
+Line no 2->type_specifier	: INT
+
+Line no 2->declaration_list : ID
+ a 
+
+ScopeTable--> 2 
+<a,ID,-1111>
+
+ScopeTable--> 1 
+
+Line no 2->declaration_list : declaration_list COMMA ID
+ b
+
+ScopeTable--> 2 
+<b,ID,-1111>
+<a,ID,-1111>
+
+ScopeTable--> 1 
+
+Line no 2->declaration_list : declaration_list COMMA ID LTHIRD CONST_INT RTHIRD
+ c
+
+ScopeTable--> 2 
+<b,ID,-1111>
+<c,ID,{-1,-1,-1}>
+<a,ID,-1111>
+
+ScopeTable--> 1 
+
+Line no 2->var_declaration : type_specifier declaration_list SEMICOLON
+
+Line no 2->statement : var_declaration
+
+Line no 2-> statements : statement
+
+Line no 3-> variable: ID
+ a
+
+Line no 3->factor: CONST_INT
+ 1
+
+Line no 3->unary_expression: factor
+
+Line no 3->term :	unary_expression
+
+Line no 3->factor: CONST_INT
+ 2
+
+Line no 3->unary_expression: factor
+
+Line no 3->term :	unary_expression
+
+Line no 3->simple_expression : term
+
+Line no 3->factor: CONST_INT
+ 3
+
+Line no 3->unary_expression: factor
+
+Line no 3->term :	unary_expression
+
+Line no 3->simple_expression : simple_expression
+
+ScopeTable--> 2 
+<b,ID,-1111>
+<c,ID,{-1,-1,-1}>
+<a,ID,-1111>
+
+ScopeTable--> 1 
+
+Line no 3->rel_expression	: simple_expression
+
+Line no 3->logic_expression : rel_expression
+
+Line no 3->expression-> logic_expression
+
+Line no 3->factor: LPAREN expression RPAREN
+
+Line no 3->unary_expression: factor
+
+Line no 3->term :	term MULOP unary_expression
+
+ScopeTable--> 2 
+<b,ID,-1111>
+<c,ID,{-1,-1,-1}>
+<a,ID,-1111>
+
+ScopeTable--> 1 
+
+Line no 3->factor: CONST_INT
+ 3
+
+Line no 3->unary_expression: factor
+
+Line no 3->term :	term MULOP unary_expression
+
+ScopeTable--> 2 
+<b,ID,-1111>
+<c,ID,{-1,-1,-1}>
+<a,ID,-1111>
+
+ScopeTable--> 1 
+
+Line no 3->simple_expression : term
+
+Line no 3->rel_expression	: simple_expression
+
+Line no 3->logic_expression : rel_expression
+
+Line no 3->expression-> variable ASSIGNOP logic_expression
+
+ScopeTable--> 2 
+<b,ID,-1111>
+<c,ID,{-1,-1,-1}>
+<a,ID,2>
+
+ScopeTable--> 1 
+
+Line no 3->expression_statement : expression SEMICOLON
+
+Line no 3->statement : expression_statement
+
+Line no 3-> statements : statements statement
+
+Line no 4-> variable: ID
+ b
+
+Line no 4->factor: CONST_INT
+ 1
+
+Line no 4->unary_expression: factor
+
+Line no 4->term :	unary_expression
+
+Line no 4->simple_expression : term
+
+Line no 4->factor: CONST_INT
+ 5
+
+Line no 4->unary_expression: factor
+
+Line no 4->term :	unary_expression
+
+Line no 4->simple_expression : term
+
+Line no 4->rel_expression: simple_expression RELOP simple_expression
+
+Line no 4->logic_expression : rel_expression
+
+Line no 4->expression-> variable ASSIGNOP logic_expression
+
+ScopeTable--> 2 
+<b,ID,1>
+<c,ID,{-1,-1,-1}>
+<a,ID,2>
+
+ScopeTable--> 1 
+
+Line no 4->expression_statement : expression SEMICOLON
+
+Line no 4->statement : expression_statement
+
+Line no 4-> statements : statements statement
+
+Line no 5->factor: CONST_INT
+ 0
+
+Line no 5->unary_expression: factor
+
+Line no 5->term :	unary_expression
+
+Line no 5->simple_expression : term
+
+Line no 5->rel_expression	: simple_expression
+
+Line no 5->logic_expression : rel_expression
+
+Line no 5->expression-> logic_expression
+
+Line no 5-> variable: ID LTHIRD expression RTHIRD
+ c
+
+Line no 5->factor: CONST_INT
+ 2
+
+Line no 5->unary_expression: factor
+
+Line no 5->term :	unary_expression
+
+Line no 5->simple_expression : term
+
+Line no 5->rel_expression	: simple_expression
+
+Line no 5->logic_expression : rel_expression
+
+Line no 5->expression-> variable ASSIGNOP logic_expression
+
+ScopeTable--> 2 
+<b,ID,1>
+<c,ID,{2,-1,-1}>
+<a,ID,2>
+
+ScopeTable--> 1 
+
+Line no 5->expression_statement : expression SEMICOLON
+
+Line no 5->statement : expression_statement
+
+Line no 5-> statements : statements statement
+
+Line no 6-> variable: ID
+ a
+
+Line no 6->factor: variable
+
+Line no 6->unary_expression: factor
+
+Line no 6->term :	unary_expression
+
+Line no 6->simple_expression : term
+
+Line no 6->rel_expression	: simple_expression
+
+Line no 6-> variable: ID
+ b
+
+Line no 6->factor: variable
+
+Line no 6->unary_expression: factor
+
+Line no 6->term :	unary_expression
+
+Line no 6->simple_expression : term
+
+Line no 6->rel_expression	: simple_expression
+
+Line no 6->logic_expr
